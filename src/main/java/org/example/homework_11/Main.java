@@ -1,6 +1,6 @@
-package homework_11;
+package org.example.homework_11;
 
-import homework_11.data.Planets;
+import org.example.homework_11.data.Planets;
 
 /**
  * For tasting.

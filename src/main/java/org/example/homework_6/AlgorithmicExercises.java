@@ -1,4 +1,4 @@
-package homework_6;
+package org.example.homework_6;
 
 import java.util.Scanner;
 
@@ -47,7 +47,7 @@ public class AlgorithmicExercises {
      * @param num given number
      */
      public static void primeNum(int num) {
-         if (homework_5.AlgorithmicExercises.isPrime(num)) {
+         if (org.example.homework_5.AlgorithmicExercises.isPrime(num)) {
              System.out.println("Your number is prime.");
          } else {
              System.out.println("Your number is not prime.");

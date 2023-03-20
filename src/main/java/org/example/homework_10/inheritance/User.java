@@ -1,4 +1,4 @@
-package homework_10.inheritance;
+package org.example.homework_10.inheritance;
 
 import java.util.ArrayList;
 import java.util.List;

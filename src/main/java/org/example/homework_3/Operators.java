@@ -1,4 +1,4 @@
-package homework3;
+package org.example.homework_3;
 
 public class Operators {
     public static void main(String[] args) {

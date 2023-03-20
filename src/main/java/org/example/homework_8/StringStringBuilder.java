@@ -1,4 +1,4 @@
-package homework_8;
+package org.example.homework_8;
 
 import java.util.Scanner;
 
@@ -49,9 +49,9 @@ public class StringStringBuilder {
      * String reverse.Task 3.
      * @param param given param
      */
-    public void reverseString(String param) {
+    public String reverseString(String param) {
         StringBuilder rev = new StringBuilder(param);
-        System.out.println(rev.reverse());
+        return rev.reverse().toString();
     }
 
     /**
@@ -74,16 +74,16 @@ public class StringStringBuilder {
      * All later print UpperCase for String.Task 5.
      * @param param given param
      */
-    public void stringUpperCase(String param) {
-        System.out.println(param.toUpperCase());
+    public String stringUpperCase(String param) {
+        return param.toUpperCase();
     }
 
     /**
      * All later print UpperCase for StringBuilder.Task 5.
      * @param param given param
      */
-    public void stringBuilderUpperCase(StringBuilder param) {
-        System.out.println(param.toString().toUpperCase());
+    public String stringBuilderUpperCase(StringBuilder param) {
+        return param.toString().toUpperCase();
     }
 
     /**
@@ -159,8 +159,8 @@ public class StringStringBuilder {
      * @param param given param
      * @param n end index
      */
-    public void printSubLine(String param, int n) {
-        System.out.println(param.substring(0, n));
+    public String printSubLine(String param, int n) {
+        return param.substring(0, n);
     }
 
     /**
@@ -209,13 +209,13 @@ public class StringStringBuilder {
 
         s.wordNewLine("We are living in");
 
-        s.reverseString("simple");
+        System.out.println(s.reverseString("simple"));
 
         System.out.println(s.countSubString("We are living in an yellow submarine. We don't  have anything", "in"));
 
-        s.stringUpperCase("hello world");
+        System.out.println(s.stringUpperCase("hello world"));
 
-        s.stringBuilderUpperCase(new StringBuilder("hello world"));
+        System.out.println(s.stringBuilderUpperCase(new StringBuilder("hello world")));
 
         System.out.print("Enter some word or text >>>");
         System.out.println(s.twentyLengthString(new StringBuilder(sc.nextLine())));
@@ -230,7 +230,7 @@ public class StringStringBuilder {
 
         System.out.println(s.symbolIndex("We are living in an yellow submarine. We don't  have anything"));
 
-        s.printSubLine("We are living in an yellow submarine. We don't  have anything" , 9);
+        System.out.println(s.printSubLine("We are living in an yellow submarine. We don't  have anything" , 9));
         s.printSubLine(new StringBuilder("We are living in an yellow submarine. We don't  have anything") , 9);
 
         System.out.println(s.isStringNullAndEmpty(""));

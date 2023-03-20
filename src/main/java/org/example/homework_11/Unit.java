@@ -1,4 +1,4 @@
-package homework_11;
+package org.example.homework_11;
 
 public enum Unit {
     METER("m") {

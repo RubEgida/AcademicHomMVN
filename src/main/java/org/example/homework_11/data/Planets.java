@@ -1,4 +1,4 @@
-package homework_11.data;
+package org.example.homework_11.data;
 
 /**
  * Homework 11.

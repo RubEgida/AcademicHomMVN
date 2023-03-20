@@ -1,4 +1,4 @@
-package homework_10.abstract_and_interface;
+package org.example.homework_10.abstract_and_interface;
 
 public class MyClass2 extends BaseClass {
     public MyClass2() {

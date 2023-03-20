@@ -1,27 +1,33 @@
-package homework_7;
+package org.example.homework_7;
 
+
+import java.util.ArrayList;
 
 public class Arrays {
     /**
      * Print positive numbers in array.Task 1.
      * @param n array
      */
-    public static void positiveNums(int[] n) {
+    public static String positiveNums(int[] n) {
+        StringBuilder positiveNums = new StringBuilder();
         for (int i : n) {
             if (i > 0) {
-                System.out.print(i + ", ");
+                positiveNums.append(i).append(" ");
             }
         }
+        return positiveNums.toString();
     }
 
     /**
      * Array elements reversed printing.Task 2.
      * @param s array
      */
-    public static void reverseArrayElements(short[] s) {
-        for (int i = s.length - 1; i >= 0 ; i--) {
-            System.out.print(s[i] + ", ");
+    public static short[] reverseArrayElements(short[] s) {
+        short[] reverse = new short[s.length];
+        for (int i = s.length - 1, j = 0; i >= 0 ; i--, j++) {
+            reverse[j] = s[i];
         }
+        return reverse;
     }
 
     /**
@@ -61,12 +67,10 @@ public class Arrays {
      * Clone and print array m.Task 5.
      * @param n array
      */
-    public static void arrayClone(int[] n) {
+    public static int[] arrayClone(int[] n) {
         int[] m = new int[n.length];
-        for (int i = 0; i < n.length; i++) {
-            m[i] = n[i];
-            System.out.print(m[i] + ", ");
-        }
+        System.arraycopy(n, 0, m, 0, n.length);
+        return m;
     }
 
     /**
@@ -74,12 +78,12 @@ public class Arrays {
      * @param one first array
      * @param two second array
      */
-    public static void twoArraysAdding(int[] one, int[] two) {
+    public static int[] twoArraysAdding(int[] one, int[] two) {
         int[] tree = new int[one.length];
         for (int i = 0, j = 0; i < one.length && j < two.length; i++, j++) {
             tree[i] = one[i] + two[j];
-            System.out.print(tree[i] + ", ");
         }
+        return tree;
     }
 
     /**
@@ -102,25 +106,27 @@ public class Arrays {
      * Printing the not same 3 array elements.Task 8.
      * @param n array
      */
-    public static void treeElementsArray(int[] n) {
+    public static ArrayList<String> treeElementsArray(int[] n) {
         int[] sub;
         String intArray;
+        ArrayList<String> elems = new ArrayList<>();
         for (int k : n) {
             for (int j = 0; j < n.length - 1; j++) {
                 if (k != n[j] && k != n[j + 1]) {
                     sub = new int[]{k, n[j], n[j + 1]};
                     intArray = java.util.Arrays.toString(sub);
-                    System.out.println(intArray);
+                    elems.add(intArray);
                 }
             }
         }
+        return elems;
     }
 
     /**
      * Print array changed elements at largest to smaller.Task 9.
      * @param n array
      */
-    public static void atLargestToSmaller(int[] n) {
+    public static int[] atLargestToSmaller(int[] n) {
         int num;
         boolean b = false;
         while (!b) {
@@ -134,16 +140,14 @@ public class Arrays {
                 }
             }
         }
-        for (int m : n) {
-            System.out.print(m + ", ");
-        }
+        return n;
     }
 
     /**
      * Odd elements print the last.Task 10.
      * @param n array
      */
-    public static void oddElements(int[] n) {
+    public static int[] oddElements(int[] n) {
         int num;
         boolean b = true;
         while (b) {
@@ -157,21 +161,41 @@ public class Arrays {
                 }
             }
         }
-        for (int i : n) {
-            System.out.print(i + ", ");
-        }
+        return n;
     }
 
+//    /**
+//     * Second version.Task 10.
+//     * @param arr array
+//     */
+//    public static void arrayOdd(int[] arr) {
+//        int[] expArr = new int[arr.length];
+//        int lastElem = arr.length - 1;
+//        int firstElem = 0;
+//        for (int j : arr) {
+//            if (j % 2 == 0) {
+//                expArr[firstElem] = j;
+//                firstElem++;
+//            } else {
+//                expArr[lastElem] = j;
+//                lastElem--;
+//            }
+//        }
+//        for(int i = 0; i < arr.length; i++) {
+//            System.out.print(expArr[i] + "  ");
+//        }
+//    }
+
     /**
-     * Print numbers without number zeros.Task 11.
+     * Print numbers without number zero.Task 11.
      * @param n array
      */
-    public static void arrayPrintWithoutZero(int[] n) {
+    public static String arrayPrintWithoutZero(int[] n) {
+        StringBuilder a = new StringBuilder();
         for (int i : n) {
-            if (i != 0) {
-                System.out.print(i + ", ");
-            }
+            if (i != 0) a.append(i);
         }
+        return a.toString();
     }
 
     /**
@@ -205,28 +229,6 @@ public class Arrays {
         }
         for (int i = min; i <= max; i++) {
             System.out.print(n[i] + ", ");
-        }
-    }
-
-    /**
-     * Second version.Task 12.
-     * @param arr array
-     */
-    public static void arrayOdd(int[] arr) {
-        int[] expArr = new int[arr.length];
-        int lastElem = arr.length - 1;
-        int firstElem = 0;
-        for (int j : arr) {
-            if (j % 2 == 0) {
-                expArr[firstElem] = j;
-                firstElem++;
-            } else {
-                expArr[lastElem] = j;
-                lastElem--;
-            }
-        }
-        for(int i = 0; i < arr.length; i++) {
-            System.out.print(expArr[i] + "  ");
         }
     }
 
@@ -331,10 +333,10 @@ public class Arrays {
      */
     public static void main(String[] args) {
         System.out.print("In array positive numbers is : ");
-        positiveNums(new int[]{3, 3, -9, 0, 4});
+        System.out.println(positiveNums(new int[]{3, 3, -9, 0, 4}));
 
         System.out.print('\n' + "Array elements reversed is : ");
-        reverseArrayElements(new short[] {1,2,3,4,5});
+        System.out.println(java.util.Arrays.toString(reverseArrayElements(new short[]{1, 2, 3, 4, 5})));
 
         System.out.print('\n' + "Largest element in array is : ");
         System.out.print(largestElementInArray(new long[]{2,43,7,8768,45}));
@@ -343,25 +345,25 @@ public class Arrays {
         System.out.print(smallerElementInArray(new float[]{2.3f,45.0f,34.555f}));
 
         System.out.print('\n' + "Array clone : ");
-        arrayClone(new int[]{4, 5, 3, 56, 5});
+        System.out.println(java.util.Arrays.toString(arrayClone(new int[]{4, 5, 3, 56, 5})));
 
         System.out.print('\n' + "Third array elements is : ");
-        twoArraysAdding(new int[]{2,3,4,5,6}, new int[]{1,1,1,1,1});
+        System.out.println(java.util.Arrays.toString(twoArraysAdding(new int[]{2, 3, 4, 5, 6}, new int[]{1, 1, 1, 1, 1})));
 
         System.out.print('\n' + "We find k number in array " + givenNumInArray(new int[]{2,3,4,2,55,43,2}, 2) + " times");
 
         System.out.println("Array not same tree elements printing!");
-        treeElementsArray(new int[]{2,34,3,2,45,67,4});
+        System.out.println(treeElementsArray(new int[]{2,34,3,2,45,67,4}));
 
         System.out.print("Array elements at largest to smaller : ");
-        atLargestToSmaller(new int[]{2, 3, 54, 45, 32, 7});
+        System.out.println(java.util.Arrays.toString(atLargestToSmaller(new int[]{2, 3, 54, 45, 32, 7})));
 
         System.out.print("Array odd elements go back in array : ");
-        oddElements(new int[]{3,2,45,64,545,3342,4});
-        arrayOdd(new int[]{3,2,45,64,545,3342,4});
+        System.out.println(java.util.Arrays.toString(oddElements(new int[]{3, 2, 45, 64, 545, 3342, 4})));
+        //arrayOdd(new int[]{3,2,45,64,545,3342,4});
 
         System.out.print("Array without zeros : ");
-        arrayPrintWithoutZero(new int[]{2,12,34,56,64,0,45,0});
+        System.out.println(arrayPrintWithoutZero(new int[]{2,12,34,56,64,0,45,0}));
 
         System.out.print("Largest increasing subsequence is : ");
         longestIncreasingSubsequence(new int[]{80,2,43,32,32,43,45,45,0,1,0,2,3,4,56});

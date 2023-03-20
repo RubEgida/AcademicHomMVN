@@ -1,4 +1,4 @@
-package homework_12;
+package org.example.homework_12;
 
 public class Change extends State{
     private int light;

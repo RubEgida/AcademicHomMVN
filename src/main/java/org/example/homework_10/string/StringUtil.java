@@ -1,4 +1,4 @@
-package homework_10.string;
+package org.example.homework_10.string;
 
 import java.util.ArrayList;
 import java.util.Arrays;

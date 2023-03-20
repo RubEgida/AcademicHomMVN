@@ -1,4 +1,4 @@
-package homework_4.second;
+package org.example.homework_4.second;
 
 /**
  * Homework 4.

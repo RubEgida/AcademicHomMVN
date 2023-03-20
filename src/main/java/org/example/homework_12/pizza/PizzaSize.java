@@ -1,4 +1,4 @@
-package homework_12.pizza;
+package org.example.homework_12.pizza;
 
 public enum PizzaSize {
     SMALL(5.5),

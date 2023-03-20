@@ -1,6 +1,6 @@
-package homework_10.inheritance;
+package org.example.homework_10.inheritance;
 
-import homework_10.inheritance.Car;
+import org.example.homework_10.inheritance.Car;
 
 public class Truck extends Car {
     private int capacity;
