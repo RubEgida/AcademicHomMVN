@@ -150,7 +150,6 @@ public class SortAlgorithms {
         arr[current_position] = temp;
 
         int[] left = quickSort(arr, current_position);
-
         int[] arr2 = Arrays.copyOfRange(arr, current_position + 1, elements);
         int[] right = quickSort(arr2, elements - current_position - 1);
 
