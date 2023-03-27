@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee20b2db-942a-4b07-865a-4c63a1bd5826" name="Changes" comment="homeworks adding">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/homework_15/ArrayAndLinkedLists.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/homework_16/LinkedListDeque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/homework_16/LinkedListQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/homework_16/QueueDeque.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/homework_14/SortAlgorithms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/homework_14/SortAlgorithms.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +53,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/HP/IdeaProjects/Homeworks/src/homework_9/MyCustomArrayList.java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/HP/IdeaProjects/ExamenMVN&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -72,13 +73,26 @@
       <recent name="org.example.homework_7" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ArrayAndLinkedLists">
+  <component name="RunManager" selected="Application.QueueDeque">
     <configuration name="ArrayAndLinkedLists" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.homework_15.ArrayAndLinkedLists" />
       <module name="HomeworksJavaAcademic" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.homework_15.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkedListQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.homework_16.LinkedListQueue" />
+      <module name="HomeworksJavaAcademic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.homework_16.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,34 +113,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortAlgorithmsTest.insertionSortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QueueDeque" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.homework_16.QueueDeque" />
       <module name="HomeworksJavaAcademic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.homework_14.*" />
+          <option name="PATTERN" value="org.example.homework_16.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.homework_14" />
-      <option name="MAIN_CLASS_NAME" value="org.example.homework_14.SortAlgorithmsTest" />
-      <option name="METHOD_NAME" value="insertionSortTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SortAlgorithmsTest.mergeSortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="HomeworksJavaAcademic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.homework_14.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.homework_14" />
-      <option name="MAIN_CLASS_NAME" value="org.example.homework_14.SortAlgorithmsTest" />
-      <option name="METHOD_NAME" value="mergeSortTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.QueueDeque" />
+        <item itemvalue="Application.LinkedListQueue" />
         <item itemvalue="Application.ArrayAndLinkedLists" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.SortAlgorithmsTest.quickSortTest" />
-        <item itemvalue="JUnit.SortAlgorithmsTest.mergeSortTest" />
-        <item itemvalue="JUnit.SortAlgorithmsTest.insertionSortTest" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +168,9 @@
       <workItem from="1679485297839" duration="3498000" />
       <workItem from="1679605058081" duration="7602000" />
       <workItem from="1679692163363" duration="2225000" />
-      <workItem from="1679694403527" duration="5872000" />
+      <workItem from="1679694403527" duration="6070000" />
+      <workItem from="1679740168920" duration="1385000" />
+      <workItem from="1679942717502" duration="4634000" />
     </task>
     <task id="LOCAL-00001" summary="homeworks adding">
       <created>1679350306963</created>
@@ -182,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679350306963</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="homeworks adding">
+      <created>1679700401978</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679700401978</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
