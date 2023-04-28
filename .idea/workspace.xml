@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee20b2db-942a-4b07-865a-4c63a1bd5826" name="Changes" comment="homeworks adding">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/homework_19/hibernate_util/HibernateUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/homework_19/mapping/Input.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/homework_19/pojo_classes/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/homework_19/pojo_classes/Company.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/homework_19/pojo_classes/PassInTrip.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/homework_19/pojo_classes/Passenger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/homework_19/pojo_classes/Trip.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/txt_files/companies.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/txt_files/pass_in_trip.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/txt_files/passengers.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/txt_files/trip.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ee20b2db-942a-4b07-865a-4c63a1bd5826" name="Changes" comment="homeworks adding" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -233,7 +218,7 @@
       <workItem from="1682601040788" duration="287000" />
       <workItem from="1682615433935" duration="6385000" />
       <workItem from="1682621852634" duration="16470000" />
-      <workItem from="1682709683359" duration="59000" />
+      <workItem from="1682709683359" duration="417000" />
     </task>
     <task id="LOCAL-00001" summary="homeworks adding">
       <created>1679350306963</created>
@@ -270,11 +255,36 @@
       <option name="project" value="LOCAL" />
       <updated>1680547644317</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="homeworks adding">
+      <created>1682709866216</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682709866216</updated>
+    </task>
+    <task id="LOCAL-00007" summary="homeworks adding">
+      <created>1682710054712</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1682710054712</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
