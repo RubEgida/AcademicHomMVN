@@ -20,7 +20,6 @@ public class Passenger {
     private String passenger_phone;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Address address;
 
 }

@@ -4,8 +4,6 @@ import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
-import java.util.List;
 @Data
 @NoArgsConstructor
 @Entity
@@ -15,14 +13,14 @@ public class PassInTrip {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int pass_in_trip_id;
 
-    @OneToMany
-    private List<Trip> trip_id;
+    @ManyToOne
+    private Trip trip_id;
 
-    @OneToMany
-    private List<Passenger> psg_id;
+    @ManyToOne
+    private Passenger psg_id;
 
     @Column(nullable = false, name = "date")
-    private Date date;
+    private String date;
 
     @Column(nullable = false, name = "place")
     private String place;

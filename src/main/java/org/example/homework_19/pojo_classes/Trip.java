@@ -4,7 +4,6 @@ import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
 @Data
 @NoArgsConstructor
 @Entity
@@ -13,8 +12,8 @@ public class Trip {
     @Id
     private int trip_number;
 
-    @OneToMany
-    private List<Company> company;
+    @ManyToOne
+    private Company company;
 
     @Column(nullable = false, name = "airplane")
     private String airplane;
